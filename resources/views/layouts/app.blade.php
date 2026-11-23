@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>@yield('title', 'POS System')</title>
+</head>
+<body>
+    <nav>
+        <a href="{{ route('home') }}">Home</a> |
+        <a href="{{ route('about') }}">About</a> |
+        <a href="{{ route('customers') }}">Customers</a> |
+        <a href="{{ route('users') }}">Users</a>
+    </nav>
+    <hr>
+
+    @yield('content')
+</body>
+</html>
